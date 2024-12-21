@@ -1,5 +1,15 @@
 # dumbbell
 
+### Install
+
+```bash
+pip install git+https://github.com/JosephBARBIERDARNAL/dumbbell.git
+```
+
+<br/><br/>
+
+### Quick start
+
 ```python
 import matplotlib.pyplot as plt
 from dumbbell import lollipop
