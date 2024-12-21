@@ -1,0 +1,26 @@
+[project]
+name = "dumbbell"
+version = "0.0.0.9"
+authors = [
+  { name="Joseph Barbier", email="joseph.barbierdarnal@gmail.com" },
+]
+description = "Dumbbell and lollipop"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Matplotlib"
+]
+dependencies = [
+  "matplotlib"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/JosephBARBIERDARNAL/dumbbell"
+Issues = "https://github.com/JosephBARBIERDARNAL/dumbbell/issues"
