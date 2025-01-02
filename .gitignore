@@ -1,5 +1,5 @@
 env/
 .DS_Store
 *cache*
-sandbox.*
+sandbox/
 *egg-info

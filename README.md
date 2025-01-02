@@ -12,13 +12,24 @@ pip install git+https://github.com/JosephBARBIERDARNAL/dumbbell.git
 
 ```python
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
 from dumbbell import lollipop
 
-x = [1, 2, 3, 4, 5]
-y = [10, 50, 27, 48, 1]
+np.random.seed(0)
+x = list(range(20))
+y = np.random.normal(size=20)
+df = pd.DataFrame({"x": x, "y": y})
 
-fig, ax = plt.subplots()
-lollipop(x=x, y=y, c=y)
+fig, ax = plt.subplots(figsize=(5, 6))
+lollipop(
+    x=df["x"],
+    y=df["y"],
+    c=df["y"],
+    kind="vertical",
+)
+
 plt.show()
 ```
 
